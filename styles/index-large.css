@@ -1,0 +1,45 @@
+@media screen and (min-width: 768px) {
+  .branding {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Student homepage for WDD231 showcasing projects and coursework.">
+  <meta name="author" content="Olassignibo Luc Bamigbola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | WDD231 Portfolio</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+
+ 
+  
+  <link rel="stylesheet" href="styles/index-small.css">
+  <link rel="stylesheet" href="styles/index-large.css">
+
+  
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <h1> wdd231 - Olassignibo Luc </h1>
-    
-    
+  <header>
+    <div class="branding">
+      <img src="images/logo.png" alt="Site Logo" class="logo" width="48" height="48">
+      <span class="site-name">Olassignibo Luc Bamigbola</span>
+    </div>
+    <button id="hamburger" aria-label="Toggle Navigation">&#9776;</button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="final/index.html">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="about-me">
+      <h2>About Me</h2>
+      <p>I am Olassignibo Luc Bamigbola, an aspiring frontend software engineer and entrepreneur from Benin. I am passionate about building scalable, user-friendly web applications that combine technical precision with business insight. With strong skills in Python, C#, JavaScript, html, css and responsive design, I focus on creating practical digital tools such as currency exchange platforms and professional review systems. My goal is to deliver solutions that are functional, trustworthy, and brand-consistent, while showcasing the innovation and talent of Benin on the global stage.</p>
+    </section>
+
+    <section class="student-photo">
+      <h2>Student Photo</h2>
+      <img src="images/profile.jpg" alt="Olassignibo Luc Bamigbola" width="300" height="300">
+    </section>
+
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+      <div class="course-buttons">
+        <button id="btnAll">All Courses</button>
+        <button id="btnWDD">WDD Courses</button>
+        <button id="btnCSE">CSE Courses</button>
+      </div>
+      <ul id="courseList"></ul>
+      <p id="creditTotal">Total credits: 0</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-media">
+      <a href="https://github.com/olamideluc/wdd231" target="_blank" aria-label="GitHub">
+        <img src="images/github.png" alt="GitHub Icon" width="24" height="24">
+      </a>
+      <a href="https://www.linkedin.com/in/bamigbola-luc-12186629b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedIn.png" alt="LinkedIn Icon" width="24" height="24">
+      </a>
+      <a href="https://www.facebook.com/olamide.luc/" target="_blank" aria-label="facebook">
+        <img src="images/facebook.png" alt="Facebook Icon" width="24" height="24">
+      </a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> Olassignibo Luc Bamigbola • Benin</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
