@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta & Title -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Porto-Novo Chamber of Commerce</title>
+  <title>Directory | Porto-Novo Chamber of Commerce</title>
 
-  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
 
-  
-  <meta name="description" content="Explore the official business directory of the Porto-Novo Chamber of Commerce. Discover trusted local businesses and organizations in Porto-Novo." />
+  <!-- SEO Meta -->
+  <meta name="description" content="Explore the official business directory of the Porto-Novo Chamber of Commerce.">
   <meta name="author" content="Olassignibo Luc Bamigbola">
 
-  
+  <!-- Favicon -->
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  
+  <!-- Open Graph (Social Sharing) -->
   <meta property="og:title" content="Porto-Novo Chamber of Commerce Directory">
-  <meta property="og:description" content="Discover trusted local businesses and organizations in Porto-Novo with our official Chamber directory.">
-  <meta property="og:image" content="https://yourdomain.com/chamber/images/og-image.jpg">
+  <meta property="og:description" content="Discover local businesses and organizations in Porto-Novo.">
+  <meta property="og:image" content="images/og-image.jpg">
   <meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
   <meta property="og:type" content="website">
 
-  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/directory-small.css">
   <link rel="stylesheet" href="styles/directory-large.css">
 
-  
+  <!-- JavaScript -->
   <script src="scripts/directory.js" defer></script>
 </head>
 <body>
-  
+  <!-- Header -->
   <header>
     <nav>
       <h1>Porto-Novo Chamber of Commerce</h1>
@@ -47,26 +48,25 @@
     </nav>
   </header>
 
-  
+  <!-- Main Content -->
   <main>
-    <h1>Porto-Novo Chamber of Commerce</h1>
     <section class="directory">
       <h2>Business Directory</h2>
 
-      
+      <!-- View Toggle Buttons -->
       <div class="view-toggle">
         <button id="gridViewBtn" aria-pressed="true">Grid View</button>
         <button id="listViewBtn" aria-pressed="false">List View</button>
       </div>
 
-      
+      <!-- Members Container (populated via JS) -->
       <div id="members" class="grid-view">
-        
+        <!-- Business cards injected dynamically -->
       </div>
     </section>
   </main>
 
-  
+  <!-- Footer -->
   <footer>
     <address>
       <p>Rue 8 Cinqantenait, Porto-Novo, Benin</p>
