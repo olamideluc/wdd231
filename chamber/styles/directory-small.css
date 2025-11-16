@@ -1,119 +1,119 @@
+/* Small screen styles */
+@media (max-width: 768px) {
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0.5rem;
+  }
 
+  header {
+    background-color: #005f99;
+    color: #fff;
+    padding: 1rem;
+  }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f7fa;
-  color: #333;
-  line-height: 1.6;
-  padding: 0.5rem;
-}
+  nav h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
 
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-header {
-  background-color: #005f99;
-  color: #fff;
-  padding: 1rem;
-}
+  nav a {
+    color: #fff;
+    font-weight: bold;
+  }
 
-nav h1 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
+  nav a:hover,
+  nav a:focus {
+    text-decoration: underline;
+  }
 
-nav ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
+  .directory h2 {
+    color: #005f99;
+    margin: 1rem 0;
+  }
 
-nav a {
-  color: #fff;
-  font-weight: bold;
-}
+  .view-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-nav a:hover,
-nav a:focus {
-  text-decoration: underline;
-}
+  .view-toggle button {
+    padding: 0.5rem;
+    background-color: #005f99;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
 
+  .view-toggle button:hover,
+  .view-toggle button:focus {
+    background-color: #004a7c;
+    outline: 2px solid #ffcc00;
+    outline-offset: 2px;
+  }
 
-.directory h2 {
-  color: #005f99;
-  margin: 1rem 0;
-}
+  .business-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px;
+  }
 
-.view-toggle {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
+  .business-card h3 {
+    color: #005f99;
+    margin-bottom: 0.5rem;
+  }
 
-.view-toggle button {
-  padding: 0.5rem;
-  background-color: #005f99;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-}
+  .business-card .tagline {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
 
-.view-toggle button:hover,
-.view-toggle button:focus {
-  background-color: #004a7c;
-  outline: 2px solid #ffcc00;
-  outline-offset: 2px;
-}
+  footer {
+    background-color: #005f99;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
+  footer address,
+  footer .social-icons,
+  footer p {
+    margin-bottom: 0.5rem;
+  }
 
-.business-card {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  border-radius: 6px;
-}
+  footer a {
+    color: #fff; /* keep links white text, no background */
+  }
 
-.business-card h3 {
-  color: #005f99;
-  margin-bottom: 0.5rem;
-}
+  .grid-view {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+  }
 
-.business-card .tagline {
-  font-style: italic;
-  margin-bottom: 0.5rem;
-}
+  .list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-
-footer {
-  background-color: #005f99;
-  color: #fff;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-footer address,
-footer .social-icons,
-footer p {
-  margin-bottom: 0.5rem;
-}
-
-footer a {
-  color: #fff;
-}
-
-
-.grid-view {
-  display: grid;
-  grid-template-columns: 1fr; 
-  gap: 1rem;
-}
-
-.list-view {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.member-logo {
-  max-width: 80px;
-  height: auto;
-  margin-bottom: 0.5rem;
+  .member-logo {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 0.5rem;
+    object-fit: contain;
+  }
 }

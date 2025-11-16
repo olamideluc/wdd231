@@ -1,63 +1,80 @@
+/* Large screen styles */
+@media (min-width: 769px) {
+  header {
+    background-color: #005f99; /* keep blue */
+    color: #fff;               /* keep white text */
+    padding: 1rem 2rem;
+  }
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  nav h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
 
-header {
-  padding: 1rem 2rem;
-}
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  nav a {
+    padding: 0.5rem;
+    color: #fff; /* ensure links stay white on blue background */
+  }
 
-nav h1 {
-  font-size: 1.5rem;
-  margin-bottom: 0;
-}
+  nav a.active {
+    border-bottom: 2px solid #fff; /* contrast against blue */
+  }
 
-nav ul {
-  flex-direction: row;
-  gap: 1rem;
-}
+  .view-toggle {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
 
-nav a {
-  padding: 0.5rem;
-}
+  .view-toggle button {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
 
-nav a.active {
-  border-bottom: 2px solid #fff;
-}
+  .business-card {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 4px;
+  }
 
+  .member-logo {
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
 
-.view-toggle {
-  flex-direction: row;
-  margin-bottom: 1rem;
-}
+  .grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
 
-.view-toggle button {
-  padding: 0.5rem 1rem;
-  margin-right: 0.5rem;
-  cursor: pointer;
-}
+  footer {
+    background-color: #005f99; /* keep blue */
+    color: #fff;               /* keep white text */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
 
-.business-card {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.member-logo {
-  max-width: 100px;
-}
-
-
-.grid-view {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-
-footer {
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  footer a {
+    color: #fff; /* ensure links are visible */
+  }
 }
