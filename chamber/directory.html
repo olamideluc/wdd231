@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Directory | Porto-Novo Chamber of Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+
+  <meta name="description" content="Explore the official business directory of the Porto-Novo Chamber of Commerce." />
+  <meta name="author" content="Olassignibo Luc Bamigbola" />
+
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  
+  <meta property="og:title" content="Porto-Novo Chamber of Commerce Directory" />
+  <meta property="og:description" content="Discover local businesses and organizations in Porto-Novo." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/chamber/directory.html" />
+  <meta property="og:type" content="website" />
+
+  
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/directory-small.css" />
+  <link rel="stylesheet" href="styles/directory-large.css" />
+
+  
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <h1>Porto-Novo Chamber of Commerce</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main>
+    <section class="directory">
+      <h2>Business Directory</h2>
+
+      
+      <div class="view-toggle">
+        <button id="gridViewBtn">Grid View</button>
+        <button id="listViewBtn">List View</button>
+      </div>
+
+      
+      <div id="members" class="grid-view">
+        
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <address>
+      <p>Rue 8 Cinqantenait, Porto-Novo, Benin</p>
+      <p>Email: bamigbolaluc@gmail.com</p>
+      <p>Phone: (229) 0169726195</p>
+    </address>
+
+    <div class="social-icons">
+      <a href="https://github.com/olamideluc/wdd231" target="_blank" aria-label="GitHub">
+        <img src="images/github.png" alt="GitHub Icon" width="24" height="24">
+      </a>
+      <a href="https://www.linkedin.com/in/bamigbola-luc-12186629b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedn.png" alt="LinkedIn Icon" width="24" height="24">
+      </a>
+      <a href="https://www.facebook.com/olamide.luc/" target="_blank" aria-label="facebook">
+        <img src="images/facebook.png" alt="Facebook Icon" width="24" height="24">
+      </a>
+    </div>
+
+    <p>Olassignibo Luc Bamigbola | WDD 231</p>
+    <p>© <span id="year"></span> Porto-Novo Chamber of Commerce</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

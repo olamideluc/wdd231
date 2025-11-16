@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Porto-Novo Tech Solutions",
+    "address": "12 Avenue de l'Indépendance, Porto-Novo, Benin",
+    "phone": "+229 21 33 4455",
+    "website": "https://portonovotech.com",
+    "image": "company1.png",
+    "membershipLevel": 3,
+    "description": "Leading provider of IT and fintech solutions."
+  },
+  {
+    "name": "Benin Agro Export",
+    "address": "45 Rue du Marché, Porto-Novo, Benin",
+    "phone": "+229 22 44 5566",
+    "website": "https://beninagroexport.com",
+    "image": "company2.png",
+    "membershipLevel": 2,
+    "description": "Exporting agricultural products across West Africa."
+  },
+  {
+    "name": "Community Bank of Porto-Novo",
+    "address": "101 Boulevard Central, Porto-Novo, Benin",
+    "phone": "+229 23 55 6677",
+    "website": "https://communitybankpn.com",
+    "image": "company3.png",
+    "membershipLevel": 3,
+    "description": "Trusted local bank supporting SMEs."
+  },
+  {
+    "name": "Maison Culturelle",
+    "address": "88 Rue des Artisans, Porto-Novo, Benin",
+    "phone": "+229 24 66 7788",
+    "website": "https://maisonculturelle.com",
+    "image": "company4.png",
+    "membershipLevel": 1,
+    "description": "Promoting Benin's art, culture, and heritage."
+  },
+  {
+    "name": "Green Energy Benin",
+    "address": "22 Eco Park Road, Porto-Novo, Benin",
+    "phone": "+229 25 77 8899",
+    "website": "https://greenenergybj.com",
+    "image": "company5.png",
+    "membershipLevel": 2,
+    "description": "Renewable energy solutions for communities."
+  },
+  {
+    "name": "Porto-Novo Chamber Café",
+    "address": "5 Rue de la Paix, Porto-Novo, Benin",
+    "phone": "+229 26 88 9900",
+    "website": "https://chambercafe.com",
+    "image": "company6.png",
+    "membershipLevel": 1,
+    "description": "Local café supporting chamber events."
+  },
+  {
+    "name": "West Africa Logistics",
+    "address": "200 Trade Zone, Porto-Novo, Benin",
+    "phone": "+229 27 99 0011",
+    "website": "https://walogistics.com",
+    "image": "company7.png",
+    "membershipLevel": 3,
+    "description": "Cross-border logistics and trade facilitation."
+  }
+]
