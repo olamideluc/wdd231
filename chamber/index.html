@@ -13,12 +13,10 @@
   <!-- Meta -->
   <meta name="description" content="Welcome to the Porto-Novo Chamber of Commerce. Empowering businesses and connecting communities.">
   <meta name="author" content="Olassignibo Luc Bamigbola">
+  <meta name="keywords" content="Porto-Novo Chamber of Commerce, business directory, Benin trade, local businesses, community development">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Porto-Novo Chamber of Commerce">
@@ -38,7 +36,7 @@
 <body>
   <!-- Header -->
   <header>
-    <nav>
+    <nav role="navigation">
       <h1>Porto-Novo Chamber of Commerce</h1>
       <ul>
         <li><a href="index.html" class="active" aria-current="page">Home</a></li>
@@ -72,7 +70,7 @@
     <!-- Weather -->
     <section class="weather">
       <h2>Local Weather</h2>
-      <div id="weather-info">
+      <div id="weather-info" aria-label="Weather information">
         <!-- Weather data will be injected by home.js -->
       </div>
     </section>
@@ -80,23 +78,8 @@
     <!-- Company Spotlights -->
     <section class="spotlights">
       <h2>Member Spotlights</h2>
-      <div class="grid-view">
-        <article class="business-card">
-          <img src="images/company1.png" alt="Porto-Novo Tech Solutions logo" class="member-logo">
-          <h3>Porto-Novo Tech Solutions</h3>
-          <p class="tagline">Leading provider of IT and fintech solutions.</p>
-        </article>
-        <article class="business-card">
-          <img src="images/company2.png" alt="Benin Agro Export logo" class="member-logo">
-          <h3>Benin Agro Export</h3>
-          <p class="tagline">Exporting agricultural products across West Africa.</p>
-        </article>
-        <article class="business-card">
-          <img src="images/company3.png" alt="Community Bank of Porto-Novo logo" class="member-logo">
-          <h3>Community Bank of Porto-Novo</h3>
-          <p class="tagline">Trusted local bank supporting SMEs.</p>
-        </article>
-      </div>
+      <!-- Dynamic container for JS injection -->
+      <div id="featured-members" class="grid-view"></div>
     </section>
   </main>
 
@@ -105,7 +88,7 @@
     <address>
       <p>Rue 8 Cinqantenait, Porto-Novo, Benin</p>
       <p>Email: bamigbolaluc@gmail.com</p>
-      <p>Phone: +229 169726195</p>
+      <p>Phone: +229 0169726195</p>
     </address>
 
     <div class="social-icons">
