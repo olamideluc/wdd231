@@ -1,0 +1,97 @@
+/* Small screen styles */
+@media (max-width: 768px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0.5rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .hero-text {
+    margin-top: 1rem;
+  }
+
+  .hero-text h2 {
+    color: #005f99;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    background-color: #005f99;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .cta-button:hover,
+  .cta-button:focus {
+    background-color: #004a7c;
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+  }
+
+  /* Events & Weather */
+  .events, .weather {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+  }
+
+  .events h2, .weather h2 {
+    color: #005f99;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Spotlights */
+  .spotlights {
+    margin-top: 2rem;
+  }
+
+  .spotlights h2 {
+    color: #005f99;
+    margin-bottom: 1rem;
+  }
+
+  .spotlights .grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .business-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+
+  .business-card h3 {
+    color: #005f99;
+    margin-bottom: 0.5rem;
+  }
+
+  .business-card .tagline {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+}

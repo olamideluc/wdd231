@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Porto-Novo Chamber of Commerce</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Meta -->
+  <meta name="description" content="Welcome to the Porto-Novo Chamber of Commerce. Empowering businesses and connecting communities.">
+  <meta name="author" content="Olassignibo Luc Bamigbola">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Porto-Novo Chamber of Commerce">
+  <meta property="og:description" content="Empowering businesses, connecting communities.">
+  <meta property="og:image" content="images/hero-banner.jpg">
+  <meta property="og:url" content="https://olamideluc.github.io/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/home-small.css">
+  <link rel="stylesheet" href="styles/home-large.css">
+
+  <!-- Scripts -->
+  <script src="scripts/home.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>Porto-Novo Chamber of Commerce</h1>
+      <ul>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/hero-banner.jpg" alt="Porto-Novo city view" class="hero-image">
+      <div class="hero-text">
+        <h2>Empowering Businesses, Connecting Communities</h2>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Current Events -->
+    <section class="events">
+      <h2>Current Events</h2>
+      <ul>
+        <li>📅 Business Networking Forum - November 29, 2025</li>
+        <li>📅 Export Trade Fair - December 14, 2025</li>
+      </ul>
+    </section>
+
+    <!-- Weather -->
+    <section class="weather">
+      <h2>Local Weather</h2>
+      <div id="weather-info">
+        <!-- Weather data will be injected by home.js -->
+      </div>
+    </section>
+
+    <!-- Company Spotlights -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div class="grid-view">
+        <article class="business-card">
+          <img src="images/company1.png" alt="Porto-Novo Tech Solutions logo" class="member-logo">
+          <h3>Porto-Novo Tech Solutions</h3>
+          <p class="tagline">Leading provider of IT and fintech solutions.</p>
+        </article>
+        <article class="business-card">
+          <img src="images/company2.png" alt="Benin Agro Export logo" class="member-logo">
+          <h3>Benin Agro Export</h3>
+          <p class="tagline">Exporting agricultural products across West Africa.</p>
+        </article>
+        <article class="business-card">
+          <img src="images/company3.png" alt="Community Bank of Porto-Novo logo" class="member-logo">
+          <h3>Community Bank of Porto-Novo</h3>
+          <p class="tagline">Trusted local bank supporting SMEs.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <address>
+      <p>Rue 8 Cinqantenait, Porto-Novo, Benin</p>
+      <p>Email: bamigbolaluc@gmail.com</p>
+      <p>Phone: +229 169726195</p>
+    </address>
+
+    <div class="social-icons">
+      <a href="https://github.com/olamideluc/wdd231" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+        <img src="images/github.png" alt="GitHub Icon" width="24" height="24">
+      </a>
+      <a href="https://www.linkedin.com/in/bamigbola-luc-12186629b" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+        <img src="images/linkedn.png" alt="LinkedIn Icon" width="24" height="24">
+      </a>
+      <a href="https://www.facebook.com/olamide.luc/" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+        <img src="images/facebook.png" alt="Facebook Icon" width="24" height="24">
+      </a>
+    </div>
+
+    <p>Olassignibo Luc Bamigbola | WDD 231</p>
+    <p>© <span id="year"></span> Porto-Novo Chamber of Commerce</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

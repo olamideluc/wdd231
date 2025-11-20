@@ -11,7 +11,7 @@
 
   /* Header */
   header {
-    background-color: #005f99;
+    background-color: #005f99; /* Chamber blue */
     color: #fff;
     padding: 1rem 2rem;
   }
@@ -44,7 +44,12 @@
   }
 
   nav a.active {
-    border-bottom: 2px solid #FFD700;
+    border-bottom: 2px solid #FFD700; /* Gold underline for active link */
+  }
+
+  nav a:hover,
+  nav a:focus {
+    text-decoration: underline;
   }
 
   /* Hero Section */
@@ -64,6 +69,7 @@
 
   .hero-text {
     flex: 1;
+    text-align: left;
   }
 
   .hero-text h2 {
@@ -74,11 +80,19 @@
 
   .cta-button {
     padding: 1rem 2rem;
+    font-size: 1rem;
     background-color: #FFD700;
     color: #005f99;
     font-weight: bold;
     border-radius: 4px;
     text-decoration: none;
+  }
+
+  .cta-button:hover,
+  .cta-button:focus {
+    background-color: #e6c200;
+    outline: 2px solid #005f99;
+    outline-offset: 2px;
   }
 
   /* Events & Weather side by side */
@@ -94,6 +108,11 @@
     border: 1px solid #ccc;
     padding: 1.5rem;
     border-radius: 8px;
+  }
+
+  .events h2, .weather h2 {
+    color: #005f99;
+    margin-bottom: 1rem;
   }
 
   /* Spotlights Grid */
@@ -130,6 +149,10 @@
     flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
+  }
+
+  footer address, footer p {
+    margin: 0.5rem 0;
   }
 
   .social-icons {
