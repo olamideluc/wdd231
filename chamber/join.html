@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join | Porto-Novo Chamber of Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/join-small.css">
+  <link rel="stylesheet" href="styles/join-large.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>Porto-Novo Chamber of Commerce</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h2>Become a Member</h2>
+
+    <!-- Membership Form -->
+    <form method="get" action="thankyou.html">
+      <label>
+        First Name:
+        <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+      </label>
+
+      <label>
+        Last Name:
+        <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+      </label>
+
+      <label>
+        Organizational Title:
+        <input type="text" name="orgTitle" title="Organizational Title"autocomplete="organization-title"
+        pattern="[A-Za-z\- ]{7,}">
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
+      </label>
+
+      <label>
+        Mobile Phone:
+        <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+      </label>
+
+      <label>
+        Organization Name:
+        <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+      </label>
+
+      <label>
+        Membership Level:
+        <select name="membership" required>
+          <option value="">Select a level</option>
+          <option value="np">NP Membership (Non-Profit)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label>
+        Organization Description:
+        <textarea name="description" title="Organization Description"></textarea>
+      </label>
+
+      <!-- Hidden timestamp -->
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Join Now">
+    </form>
+
+    <!-- Membership Cards -->
+    <section class="membership-cards">
+      <article class="card" id="np-card">
+        <h3>NP Membership</h3>
+        <p>For non-profit organizations</p>
+        <a href="#np-modal">Learn More</a>
+      </article>
+      <article class="card" id="bronze-card">
+        <h3>Bronze Membership</h3>
+        <p>Entry-level benefits</p>
+        <a href="#bronze-modal">Learn More</a>
+      </article>
+      <article class="card" id="silver-card">
+        <h3>Silver Membership</h3>
+        <p>Expanded benefits</p>
+        <a href="#silver-modal">Learn More</a>
+      </article>
+      <article class="card" id="gold-card">
+        <h3>Gold Membership</h3>
+        <p>Premium benefits</p>
+        <a href="#gold-modal">Learn More</a>
+      </article>
+    </section>
+
+    <!-- Modals -->
+    <div id="np-modal" class="modal">
+      <div class="modal-content">
+        <h3>NP Membership Benefits</h3>
+        <p>No fee, access to community events, networking opportunities.</p>
+        <button class="close">Close</button>
+      </div>
+    </div>
+
+    <div id="bronze-modal" class="modal">
+      <div class="modal-content">
+        <h3>Bronze Membership Benefits</h3>
+        <p>Basic training, event discounts, directory listing.</p>
+        <button class="close">Close</button>
+      </div>
+    </div>
+
+    <div id="silver-modal" class="modal">
+      <div class="modal-content">
+        <h3>Silver Membership Benefits</h3>
+        <p>Advertising opportunities, spotlight positions, advanced training.</p>
+        <button class="close">Close</button>
+      </div>
+    </div>
+
+    <div id="gold-modal" class="modal">
+      <div class="modal-content">
+        <h3>Gold Membership Benefits</h3>
+        <p>Premium events, maximum advertising, leadership opportunities.</p>
+        <button class="close">Close</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <address>
+      <p>Rue 8 Cinqantenait, Porto-Novo, Benin</p>
+      <p>Email: bamigbolaluc@gmail.com</p>
+      <p>Phone: +229 0169726195</p>
+    </address>
+
+    <div class="social-icons">
+      <a href="https://github.com/olamideluc/wdd231" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+        <img src="images/github.png" alt="GitHub Icon" width="24" height="24">
+      </a>
+      <a href="https://www.linkedin.com/in/bamigbola-luc-12186629b" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+        <img src="images/linkedn.png" alt="LinkedIn Icon" width="24" height="24">
+      </a>
+      <a href="https://www.facebook.com/olamide.luc/" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+        <img src="images/facebook.png" alt="Facebook Icon" width="24" height="24">
+      </a>
+    </div>
+
+    <p>Olassignibo Luc Bamigbola | WDD 231</p>
+    <p>© <span id="year"></span> Porto-Novo Chamber of Commerce</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+  <!-- Defer JS -->
+  <script src="scripts/join.js" defer></script>
+</body>
+</html>

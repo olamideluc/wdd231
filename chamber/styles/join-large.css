@@ -1,0 +1,300 @@
+/* Large screen styles (desktop and up) */
+@media (min-width: 769px) {
+  /* Base */
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.7;
+  }
+
+  /* Header (consistent with homepage) */
+  header {
+    background-color: #005f99; /* Chamber blue */
+    padding: 1rem 2rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1.75rem;
+    margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+
+  nav a.active {
+    border-bottom: 2px solid #FFD700; /* Gold underline for active link */
+  }
+
+  nav a:hover,
+  nav a:focus {
+    background-color: #004a7c;
+  }
+
+  /* Main layout container */
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 2fr 1.2fr; /* form left, cards right */
+    gap: 2rem;
+    align-items: start;
+  }
+
+  /* Page heading */
+  h2 {
+    grid-column: 1 / -1;
+    font-family: 'Montserrat', sans-serif;
+    color: #005f99;
+    margin: 0 0 1rem 0;
+  }
+
+  /* Form panel */
+  form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #005f99;
+  }
+
+  input, select, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+    color: #333;
+    background: #fff;
+  }
+
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  /* Validation styling */
+  input:invalid, select:invalid, textarea:invalid {
+    border: 2px solid #c62828; /* red */
+    outline: none;
+  }
+
+  input:valid, select:valid, textarea:valid {
+    border: 2px solid #2e7d32; /* green */
+  }
+
+  input[type="submit"] {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background-color: #FFD700;
+    color: #005f99;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, outline 0.2s ease;
+  }
+
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    background-color: #e6c200;
+    outline: 2px solid #005f99;
+    outline-offset: 2px;
+  }
+
+  /* Membership cards panel (right column) */
+  .membership-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-content: start;
+    animation: cardsEnter 600ms ease-out both;
+  }
+
+  .card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card h3 {
+    color: #005f99;
+    margin: 0 0 0.5rem 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .card p {
+    margin: 0 0 0.75rem 0;
+  }
+
+  .card a {
+    color: #005f99;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  }
+
+  /* Confirmation section on thankyou.html */
+  .confirmation {
+    grid-column: 1 / -1;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .confirmation h3 {
+    color: #005f99;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 1rem 0;
+  }
+
+  .confirmation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 1.5rem;
+  }
+
+  .confirmation li {
+    background: #f9fbfd;
+    border: 1px solid #e6e9ee;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Modals */
+  .modal {
+    display: none; /* shown via JS */
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: modalEnter 250ms ease-out both;
+  }
+
+  .modal .close {
+    margin-top: 1rem;
+    background: #005f99;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .modal .close:hover,
+  .modal .close:focus {
+    background: #004a7c;
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+  }
+
+  /* Footer (consistent with homepage) */
+  footer {
+    background-color: #005f99;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    margin-top: 3rem;
+  }
+
+  footer > * {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  footer address {
+    font-style: normal;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .social-icons img {
+    filter: brightness(0) invert(1); /* white icons */
+    transition: transform 0.2s ease;
+  }
+
+  .social-icons img:hover {
+    transform: scale(1.15);
+  }
+
+  footer p {
+    text-align: center;
+    margin: 0.25rem 0;
+  }
+
+  /* Animations */
+  @keyframes cardsEnter {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes modalEnter {
+    from { opacity: 0; transform: translateY(-6px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+}
