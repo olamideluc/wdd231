@@ -1,0 +1,51 @@
+/* Desktop/Tablet styles (≥768px) */
+body {
+  background-color: #F9F8F6;
+  color: #1A1A1A;
+  font-family: 'Inter', sans-serif;
+  padding: 2rem 4rem;
+}
+
+header {
+  background-color: #006A2B;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  color: #006A2B;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+.color-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  margin-right: 0.5rem;
+}
+
+.wireframe-placeholder {
+  background-color: #f0f0f0;
+  border: 2px dashed #CFAE49;
+  padding: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+}
