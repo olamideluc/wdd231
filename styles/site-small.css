@@ -41,6 +41,18 @@ section h2 {
   margin-right: 0.5rem;
 }
 
+/* Specific color classes for cleaner HTML */
+.color-green { background-color: #006A2B; }
+.color-gold { background-color: #CFAE49; }
+.color-beige { background-color: #F9F8F6; }
+.color-black { background-color: #1A1A1A; }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .wireframe-placeholder {
   background-color: #f0f0f0;
   border: 2px dashed #CFAE49;
@@ -48,4 +60,5 @@ section h2 {
   text-align: center;
   font-style: italic;
   font-size: 0.9rem;
+  max-width: 100%;
 }

@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "title": "Understanding Exchange Rates",
+      "description": "Learn how buy and sell rates differ and why spreads exist in currency markets.",
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "title": "Daily Exchange History",
+      "description": "Track historical NGN/XOF rates to identify patterns and plan transfers wisely.",
+      "timestamp": "2025-12-02T12:00:00Z"
+    },
+    {
+      "title": "Cross-Border Compliance",
+      "description": "Know the regulations for moving money between Nigeria and Benin securely.",
+      "timestamp": "2025-12-01T12:00:00Z"
+    },
+    {
+      "title": "Beneficiary Management",
+      "description": "Add, update, and remove beneficiaries to streamline your transfers.",
+      "timestamp": "2025-11-30T12:00:00Z"
+    },
+    {
+      "title": "Financial Literacy Tip #1",
+      "description": "Always compare exchange rates before sending money to maximize value.",
+      "timestamp": "2025-11-29T12:00:00Z"
+    },
+    {
+      "title": "Financial Literacy Tip #2",
+      "description": "Keep records of all transfers for accountability and dispute resolution.",
+      "timestamp": "2025-11-28T12:00:00Z"
+    },
+    {
+      "title": "Fraud Prevention",
+      "description": "Verify recipient details carefully to avoid scams and misdirected funds.",
+      "timestamp": "2025-11-27T12:00:00Z"
+    },
+    {
+      "title": "Exchange Rate Alerts",
+      "description": "Set alerts to be notified when NGN/XOF rates hit your target.",
+      "timestamp": "2025-11-26T12:00:00Z"
+    },
+    {
+      "title": "Account Linking",
+      "description": "Securely link your Nigerian bank account for faster transfers.",
+      "timestamp": "2025-11-25T12:00:00Z"
+    },
+    {
+      "title": "Compliance Checklist",
+      "description": "Ensure your transactions meet anti-money laundering and KYC requirements.",
+      "timestamp": "2025-11-24T12:00:00Z"
+    },
+    {
+      "title": "Exchange History Chart",
+      "description": "Visualize NGN/XOF trends over the past 30 days.",
+      "timestamp": "2025-11-23T12:00:00Z"
+    },
+    {
+      "title": "Financial Literacy Tip #3",
+      "description": "Diversify your savings between Naira and CFA to reduce risk.",
+      "timestamp": "2025-11-22T12:00:00Z"
+    },
+    {
+      "title": "Beneficiary Verification",
+      "description": "Use two-factor authentication when adding new beneficiaries.",
+      "timestamp": "2025-11-21T12:00:00Z"
+    },
+    {
+      "title": "Secure Transfers",
+      "description": "All transfers are encrypted end-to-end for maximum security.",
+      "timestamp": "2025-11-20T12:00:00Z"
+    },
+    {
+      "title": "Financial Literacy Tip #4",
+      "description": "Understand transaction fees and how they affect your net transfer amount.",
+      "timestamp": "2025-11-19T12:00:00Z"
+    },
+    {
+      "title": "Exchange History Snapshot",
+      "description": "Review weekly summaries of NGN/XOF fluctuations.",
+      "timestamp": "2025-11-18T12:00:00Z"
+    }
+  ]
+}

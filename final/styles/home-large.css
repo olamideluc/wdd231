@@ -1,0 +1,87 @@
+/* Desktop/Tablet styles (≥768px) */
+body {
+  background-color: #F9F8F6;
+  color: #1A1A1A;
+  font-family: 'Roboto', sans-serif;
+  padding: 2rem 4rem;
+  margin: 0;
+}
+
+header {
+  background-color: #006A2B;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+#menu-toggle {
+  display: none; /* hide hamburger on large screens */
+}
+
+#nav-links {
+  display: flex; /* always show nav links on large screens */
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Override hidden class on large screens */
+#nav-links.hidden {
+  display: flex; /* force nav links to show on desktop */
+}
+
+#nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rate-card {
+  border: 1px solid #CFAE49;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #fefefe;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+}

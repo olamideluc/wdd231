@@ -1,0 +1,94 @@
+{
+  "rates": [
+    {
+      "currency": "NGN/XOF",
+      "buy": 1.00,
+      "sell": 1.02,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "USD/XOF",
+      "buy": 600.50,
+      "sell": 602.75,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "EUR/XOF",
+      "buy": 655.00,
+      "sell": 657.25,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "GBP/XOF",
+      "buy": 770.10,
+      "sell": 773.40,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "CAD/XOF",
+      "buy": 445.20,
+      "sell": 447.00,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "JPY/XOF",
+      "buy": 4.15,
+      "sell": 4.20,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "CNY/XOF",
+      "buy": 85.30,
+      "sell": 86.00,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "CHF/XOF",
+      "buy": 680.40,
+      "sell": 682.90,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "AUD/XOF",
+      "buy": 390.25,
+      "sell": 392.10,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "ZAR/XOF",
+      "buy": 32.50,
+      "sell": 33.00,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "GHS/XOF",
+      "buy": 50.75,
+      "sell": 51.20,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "KES/XOF",
+      "buy": 4.90,
+      "sell": 5.05,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "MAD/XOF",
+      "buy": 60.40,
+      "sell": 61.00,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "BRL/XOF",
+      "buy": 120.30,
+      "sell": 121.50,
+      "timestamp": "2025-12-03T12:00:00Z"
+    },
+    {
+      "currency": "INR/XOF",
+      "buy": 7.80,
+      "sell": 8.00,
+      "timestamp": "2025-12-03T12:00:00Z"
+    }
+  ]
+}

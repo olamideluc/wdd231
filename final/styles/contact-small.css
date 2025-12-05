@@ -1,0 +1,153 @@
+/* Mobile-first styles (≤767px) */
+body {
+  background-color: #F9F8F6;
+  color: #1A1A1A;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem;
+  margin: 0;
+}
+
+header {
+  background-color: #006A2B;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+#nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-links.hidden {
+  display: none;
+}
+
+#nav-links li {
+  margin: 0.5rem 0;
+}
+
+#nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  margin-top: 1rem;
+}
+
+#contact-form {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+#contact-form h2 {
+  margin-bottom: 1rem;
+  color: #006A2B;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 0.75rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #006A2B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #004d1f;
+}
+
+/* Modal styling */
+dialog {
+  border: none;
+  border-radius: 6px;
+  padding: 1.5rem;
+  max-width: 90%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+dialog h3 {
+  margin-top: 0;
+  color: #006A2B;
+}
+
+dialog button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #006A2B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+dialog button:hover {
+  background-color: #004d1f;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}

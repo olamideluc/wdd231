@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta & SEO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Naira2CFA - Cross-border currency exchange platform between Nigerian Naira and West African CFA Franc.">
+  <meta name="author" content="Olassignibo Luc Bamigbola">
+  
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:title" content="Naira2CFA Currency Exchange" />
+  <meta property="og:description" content="Secure, fast, and reliable Naira to CFA Franc exchange services." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/final/index.html" />
+  <meta property="og:image" content="images/og-thumbnail.jpg" />
+
+  <!-- Title & Favicon -->
+  <title>Naira2CFA | Home</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/home-small.css" />
+  <link rel="stylesheet" href="styles/home-large.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Naira2CFA Logo" class="logo" />
+      <div class="site-title">
+        <h1>Naira2CFA</h1>
+        <p>Secure cross-border currency exchange between Nigeria and Benin</p>
+      </div>
+    </div>
+    <nav>
+      <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul id="nav-links" class="hidden">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <h2>Fast, Reliable Currency Exchange</h2>
+      <p>Real-time Naira to CFA Franc rates with secure transactions.</p>
+      <button id="exchange-btn" aria-label="Check exchange rates">Check Rates</button>
+    </section>
+
+    <!-- Dynamic Exchange Rate Section -->
+    <section id="exchange-rates">
+      <h2>Live Exchange Rates</h2>
+      <div id="rates-container">
+        <!-- Rates will be dynamically injected via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <h2>Why Choose Naira2CFA?</h2>
+      <ul>
+        <li>✔ Secure transactions</li>
+        <li>✔ Fast transfers to Benin</li>
+        <li>✔ Compliance and verification support</li>
+        <li>✔ Financial literacy resources</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Naira2CFA | Designed by Olassignibo Luc Bamigbola</p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://youtube.com/your-demo-video" target="_blank">Project Demo Video</a></p>
+    
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://github.com/olamideluc/wdd231" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+        <img src="images/github.png" alt="GitHub Icon" width="24" height="24">
+      </a>
+      <a href="https://www.linkedin.com/in/bamigbola-luc-12186629b" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+        <img src="images/linkedn.png" alt="LinkedIn Icon" width="24" height="24">
+      </a>
+      <a href="https://www.facebook.com/olamide.luc/" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+        <img src="images/facebook.png" alt="Facebook Icon" width="24" height="24">
+      </a>
+    </div>
+
+    <!-- Last Modified -->
+    <p id="lastModified">Last Modified: <!-- Injected by JavaScript --></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

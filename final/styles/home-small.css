@@ -1,0 +1,90 @@
+/* Mobile-first styles (≤767px) */
+body {
+  background-color: #F9F8F6;
+  color: #1A1A1A;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem;
+  margin: 0;
+}
+
+header {
+  background-color: #006A2B;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+#nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-links.hidden {
+  display: none;
+}
+
+#nav-links li {
+  margin: 0.5rem 0;
+}
+
+#nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rate-card {
+  border: 1px solid #CFAE49;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background-color: #fefefe;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
