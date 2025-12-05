@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta & SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Form submission results for Naira2CFA Contact.">
+  <meta name="author" content="Olassignibo Luc Bamigbola">
+
+    <meta property="og:title" content="Naira2CFA Services" >
+  <meta property="og:description" content="Learn about our currency conversion, compliance, and beneficiary management services." >
+  <meta property="og:type" content="website" >
+  <meta property="og:url" content="https://olamideluc.github.io/wdd231/final/naira2fcfa-banner.jpg" >
+  <meta property="og:image" content="https://olamideluc.github.io/wdd231/final/form-action.html" >
+
+
+  <!-- Title -->
+  <title>Naira2CFA | Submission Results</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/form-small.css">
+  <link rel="stylesheet" href="styles/form-large.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Naira2CFA Logo" class="logo">
+      <div class="site-title">
+        <h1>Naira2CFA</h1>
+        <p>Submission Results</p>
+      </div>
+    </div>
+    <nav>
+      <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul id="nav-links" class="hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="results-section">
+      <h2>Your submission</h2>
+      <div id="results" aria-live="polite">
+        <!-- Populated by form-action.js from URLSearchParams -->
+      </div>
+
+      <div class="actions">
+        <a href="contact.html" class="button">Go back to contact</a>
+        <!-- Clear button added -->
+        <button id="clearSubmission" type="button" class="button">Clear Saved Submission</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Naira2CFA | Designed by Olassignibo Luc Bamigbola</p>
+    <p><a href="attributions.html">Attributions</a>  
+       <a href="https://youtube.com/your-demo-video" target="_blank" rel="noopener noreferrer">Project Demo Video</a></p>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://github.com/olamideluc/wdd231" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+        <img src="images/github.png" alt="GitHub Icon">
+      </a>
+      <a href="https://www.linkedin.com/in/bamigbola-luc-12186629b" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+        <img src="images/linkedn.png" alt="LinkedIn Icon">
+      </a>
+      <a href="https://www.facebook.com/olamide.luc/" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+        <img src="images/facebook.png" alt="Facebook Icon">
+      </a>
+    </div>
+
+    <p id="lastModified">Last Modified: <!-- Injected by JavaScript --></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script type="module" src="scripts/form-action.js"></script>
+</body>
+</html>
