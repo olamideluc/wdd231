@@ -4,24 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Join | Porto-Novo Chamber of Commerce</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Meta -->
   <meta name="description" content="Join the Porto-Novo Chamber of Commerce to connect with local businesses, access events, and grow your organization.">
   <meta name="author" content="Olassignibo Luc Bamigbola">
-  <meta name="keywords" content="Porto-Novo Chamber of Commerce, business directory, Benin trade, local businesses, community development">
 
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/join-small.css">
-  <link rel="stylesheet" href="styles/join-large.css">
-  <script src="scripts/join.js" defer></script>
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <meta property="og:title" content="Porto-Novo Chamber of Commerce">
-  <meta property="og:description" content="The Porto-Novo Chamber of Commerce empowers local businesses, connects communities, and drives growth across Benin.">
-  <meta property="og:image" content="https://olamideluc.github.io/wdd231/chamber/naira2fcfa-banner.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Porto-Novo Chamber of Commerce Join">
+  <meta property="og:description" content="Become a member of the Porto-Novo Chamber of Commerce and access exclusive benefits.">
+  <meta property="og:image" content="https://olamideluc.github.io/wdd231/chamber/join-banner.jpg">
   <meta property="og:url" content="https://olamideluc.github.io/wdd231/chamber/join.html">
   <meta property="og:type" content="website">
 
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/join-small.css">
+  <link rel="stylesheet" href="styles/join-large.css">
+
+  <!-- Scripts -->
+  <script src="scripts/join.js" defer></script>
 </head>
 <body>
   <!-- Header -->
@@ -43,52 +52,35 @@
 
     <!-- Membership Form -->
     <form method="get" action="thankyou.html">
-      <label>
-        First Name:
-        <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
-      </label>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
 
-      <label>
-        Last Name:
-        <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
-      </label>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
 
-      <label>
-        Organizational Title:
-        <input type="text" name="orgTitle" title="Organizational Title"autocomplete="organization-title"
-        pattern="[A-Za-z\- ]{7,}">
-      </label>
+      <label for="orgTitle">Organizational Title:</label>
+      <input type="text" id="orgTitle" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
 
-      <label>
-        Email:
-        <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
-      </label>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" autocomplete="email" placeholder="example@domain.com" required>
 
-      <label>
-        Mobile Phone:
-        <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
-      </label>
+      <label for="phone">Mobile Phone:</label>
+      <input type="tel" id="phone" name="phone" autocomplete="tel" required>
 
-      <label>
-        Organization Name:
-        <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
-      </label>
+      <label for="organization">Organization Name:</label>
+      <input type="text" id="organization" name="organization" autocomplete="organization" required>
 
-      <label>
-        Membership Level:
-        <select name="membership" required>
-          <option value="">Select a level</option>
-          <option value="np">NP Membership (Non-Profit)</option>
-          <option value="bronze">Bronze Membership</option>
-          <option value="silver">Silver Membership</option>
-          <option value="gold">Gold Membership</option>
-        </select>
-      </label>
+      <label for="membership">Membership Level:</label>
+      <select id="membership" name="membership" required>
+        <option value="">Select a level</option>
+        <option value="np">NP Membership (Non-Profit)</option>
+        <option value="bronze">Bronze Membership</option>
+        <option value="silver">Silver Membership</option>
+        <option value="gold">Gold Membership</option>
+      </select>
 
-      <label>
-        Organization Description:
-        <textarea name="description" title="Organization Description"></textarea>
-      </label>
+      <label for="description">Organization Description:</label>
+      <textarea id="description" name="description"></textarea>
 
       <!-- Hidden timestamp -->
       <input type="hidden" name="timestamp" id="timestamp">
@@ -98,6 +90,7 @@
 
     <!-- Membership Cards -->
     <section class="membership-cards">
+      <h2>Membership Options</h2>
       <article class="card" id="np-card">
         <h3>NP Membership</h3>
         <p>For non-profit organizations</p>
@@ -121,33 +114,33 @@
     </section>
 
     <!-- Modals -->
-    <div id="np-modal" class="modal">
+    <div id="np-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="np-title">
       <div class="modal-content">
-        <h3>NP Membership Benefits</h3>
+        <h3 id="np-title">NP Membership Benefits</h3>
         <p>No fee, access to community events, networking opportunities.</p>
         <button class="close">Close</button>
       </div>
     </div>
 
-    <div id="bronze-modal" class="modal">
+    <div id="bronze-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="bronze-title">
       <div class="modal-content">
-        <h3>Bronze Membership Benefits</h3>
+        <h3 id="bronze-title">Bronze Membership Benefits</h3>
         <p>Basic training, event discounts, directory listing.</p>
         <button class="close">Close</button>
       </div>
     </div>
 
-    <div id="silver-modal" class="modal">
+    <div id="silver-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="silver-title">
       <div class="modal-content">
-        <h3>Silver Membership Benefits</h3>
+        <h3 id="silver-title">Silver Membership Benefits</h3>
         <p>Advertising opportunities, spotlight positions, advanced training.</p>
         <button class="close">Close</button>
       </div>
     </div>
 
-    <div id="gold-modal" class="modal">
+    <div id="gold-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="gold-title">
       <div class="modal-content">
-        <h3>Gold Membership Benefits</h3>
+        <h3 id="gold-title">Gold Membership Benefits</h3>
         <p>Premium events, maximum advertising, leadership opportunities.</p>
         <button class="close">Close</button>
       </div>
@@ -157,7 +150,7 @@
   <!-- Footer -->
   <footer>
     <address>
-      <p>Rue 8 Cinqantenait, Porto-Novo, Benin</p>
+      <p>Rue 8 Cinquantenariat, Porto-Novo, Benin</p>
       <p>Email: bamigbolaluc@gmail.com</p>
       <p>Phone: +229 0169726195</p>
     </address>
@@ -167,7 +160,7 @@
         <img src="images/github.png" alt="GitHub Icon" width="24" height="24">
       </a>
       <a href="https://www.linkedin.com/in/bamigbola-luc-12186629b" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
-        <img src="images/linkedn.png" alt="LinkedIn Icon" width="24" height="24">
+        <img src="images/linkedin.png" alt="LinkedIn Icon" width="24" height="24">
       </a>
       <a href="https://www.facebook.com/olamide.luc/" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
         <img src="images/facebook.png" alt="Facebook Icon" width="24" height="24">
@@ -178,8 +171,5 @@
     <p>© <span id="year"></span> Porto-Novo Chamber of Commerce</p>
     <p>Last Modification: <span id="lastModified"></span></p>
   </footer>
-
-  <!-- Defer JS -->
-  
 </body>
 </html>
